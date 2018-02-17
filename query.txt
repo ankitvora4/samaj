@@ -1,0 +1,7 @@
+create table
+
+create table users (id int(10) auto_increment primary key, first_name varchar(20),middle_name varchar(20), last_name varchar(20),mobile_number varchar(20), email_id varchar(20));
+
+
+create table programs (id int(10) auto_increment primary key, subject varchar(50),message varchar(100), created_at datetime, updated_at datetime);
+
