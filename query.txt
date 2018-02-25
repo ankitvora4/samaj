@@ -5,3 +5,11 @@ create table users (id int(10) auto_increment primary key, first_name varchar(20
 
 create table programs (id int(10) auto_increment primary key, subject varchar(50),message varchar(100), created_at datetime, updated_at datetime);
 
+create table otps (id int(10) auto_increment primary key, otp int(4),mobile_number varchar(20), is_verified int(1),created_at datetime, updated_at datetime);
+
+alter table users add column is_verified int(1);
+
+alter table users add column password varchar(20);
+
+alter table users add column user_name varchar(20);
+
